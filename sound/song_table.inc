@@ -611,7 +611,10 @@ gSongTable::
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
+<<<<<<< HEAD
 	song mus_test_town_music, 0, 0
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 
 	.align 2
 dummy_song_header:

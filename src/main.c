@@ -409,7 +409,12 @@ static void WaitForVBlank(void)
 {
     gMain.intrCheck &= ~INTR_FLAG_VBLANK;
 
+<<<<<<< HEAD
     VBlankIntrWait();
+=======
+    while (!(gMain.intrCheck & INTR_FLAG_VBLANK))
+        ;
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 }
 
 void SetTrainerHillVBlankCounter(u32 *counter)

@@ -633,9 +633,12 @@ $(MID_SUBDIR)/mus_vs_rayquaza.s: %.s: %.mid
 $(MID_SUBDIR)/mus_encounter_hiker.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G097 -V076
 
+<<<<<<< HEAD
 $(MID_SUBDIR)/mus_test_town_music.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V076
 
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 $(MID_SUBDIR)/ph_choice_blend.s: %.s: %.mid
 	$(MID) $< $@ -E -G130 -P4
 

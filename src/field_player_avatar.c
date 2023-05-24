@@ -326,6 +326,7 @@ static u8 ObjectEventCB2_NoMovement2(void)
     return 0;
 }
 
+<<<<<<< HEAD
 static void TryHidePlayerReflection(void)
 {
     if (gObjectEvents[gPlayerAvatar.objectEventId].hasReflection) {
@@ -341,6 +342,8 @@ static void TryHidePlayerReflection(void)
     }
 }
 
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 void PlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
 {
     struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
@@ -348,7 +351,10 @@ void PlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
     HideShowWarpArrow(playerObjEvent);
     if (gPlayerAvatar.preventStep == FALSE)
     {
+<<<<<<< HEAD
         TryHidePlayerReflection();
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
         Bike_TryAcroBikeHistoryUpdate(newKeys, heldKeys);
         if (TryInterruptObjectEventSpecialAnim(playerObjEvent, direction) == 0)
         {
@@ -359,8 +365,11 @@ void PlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
                 MovePlayerAvatarUsingKeypadInput(direction, newKeys, heldKeys);
                 PlayerAllowForcedMovementIfMovingSameDirection();
             }
+<<<<<<< HEAD
 
             TryHidePlayerReflection();
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
         }
     }
 }
@@ -1681,7 +1690,10 @@ static void Task_WaitStopSurfing(u8 taskId)
         gPlayerAvatar.preventStep = FALSE;
         UnlockPlayerFieldControls();
         DestroySprite(&gSprites[playerObjEvent->fieldEffectSpriteId]);
+<<<<<<< HEAD
         playerObjEvent->triggerGroundEffectsOnMove = TRUE;
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
         DestroyTask(taskId);
     }
 }

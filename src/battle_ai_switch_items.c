@@ -642,7 +642,10 @@ u8 GetMostSuitableMonToSwitchInto(void)
     s32 i, j;
     u8 invalidMons;
     u16 move;
+<<<<<<< HEAD
     bool8 checkedAllMonForSEMoves = FALSE;  // We have checked all Pokemon in the party for if they have a super effective move
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 
     if (*(gBattleStruct->monToSwitchIntoId + gActiveBattler) != PARTY_SIZE)
         return *(gBattleStruct->monToSwitchIntoId + gActiveBattler);
@@ -690,11 +693,15 @@ u8 GetMostSuitableMonToSwitchInto(void)
 
     while (invalidMons != 0x3F) // All mons are invalid.
     {
+<<<<<<< HEAD
         #ifdef BUGFIX
         bestDmg = 255;
         #else
         bestDmg = TYPE_MUL_NO_EFFECT;
         #endif
+=======
+        bestDmg = TYPE_MUL_NO_EFFECT;
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
         bestMonId = PARTY_SIZE;
         // Find the mon whose type is the most suitable offensively.
         for (i = firstId; i < lastId; i++)
@@ -717,11 +724,15 @@ u8 GetMostSuitableMonToSwitchInto(void)
                 /* Possible bug: this comparison gives the type that takes the most damage, when
                 a "good" AI would want to select the type that takes the least damage. Unknown if this
                 is a legitimate mistake or if it's an intentional, if weird, design choice */
+<<<<<<< HEAD
                 #ifdef BUGFIX
                 if (bestDmg > typeDmg)
                 #else
                 if (bestDmg < typeDmg)
                 #endif
+=======
+                if (bestDmg < typeDmg)
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
                 {
                     bestDmg = typeDmg;
                     bestMonId = i;
@@ -743,6 +754,7 @@ u8 GetMostSuitableMonToSwitchInto(void)
                     break;
             }
 
+<<<<<<< HEAD
             if (i != MAX_MON_MOVES || (checkedAllMonForSEMoves && bestDmg <= TYPE_MUL_NOT_EFFECTIVE))
                 return bestMonId; // Has both the typing and at least one super effective move.
 
@@ -752,6 +764,12 @@ u8 GetMostSuitableMonToSwitchInto(void)
                 invalidMons = 0;
                 checkedAllMonForSEMoves = TRUE;
             }
+=======
+            if (i != MAX_MON_MOVES)
+                return bestMonId; // Has both the typing and at least one super effective move.
+
+            invalidMons |= gBitTable[bestMonId]; // Sorry buddy, we want something better.
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
         }
         else
         {

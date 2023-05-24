@@ -73,6 +73,9 @@ ItemUseFunc ItemId_GetFieldFunc(u16 itemId);
 u8 ItemId_GetBattleUsage(u16 itemId);
 ItemUseFunc ItemId_GetBattleFunc(u16 itemId);
 u8 ItemId_GetSecondaryId(u16 itemId);
+<<<<<<< HEAD
 void ItemId_GetHoldEffectParam_Script();
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 
 #endif // GUARD_ITEM_H

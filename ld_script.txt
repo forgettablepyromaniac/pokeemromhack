@@ -1189,7 +1189,10 @@ SECTIONS {
         sound/songs/midi/mus_rg_trainer_tower.o(.rodata);
         sound/songs/midi/mus_rg_slow_pallet.o(.rodata);
         sound/songs/midi/mus_rg_teachy_tv_menu.o(.rodata);
+<<<<<<< HEAD
         sound/songs/midi/mus_test_town_music.o(.rodata);
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
         sound/songs/midi/ph_trap_blend.o(.rodata);
         sound/songs/midi/ph_trap_held.o(.rodata);
         sound/songs/midi/ph_trap_solo.o(.rodata);

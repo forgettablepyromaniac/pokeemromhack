@@ -1,4 +1,5 @@
 EventScript_RepelWoreOff::
+<<<<<<< HEAD
 	lockall
 	checkitem VAR_REPEL_LAST_USED, 1
 	compare VAR_RESULT, FALSE
@@ -32,3 +33,10 @@ EventScript_RepelWoreOff_End:
 Text_RepelWoreOff_UseAnother:
 	.string "REPEL's effect wore off…\n"
 	.string "Use another?$"
+=======
+	msgbox Text_RepelWoreOff, MSGBOX_SIGN
+	end
+
+Text_RepelWoreOff:
+	.string "REPEL's effect wore off…$"
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c

@@ -942,8 +942,11 @@ u8 ItemId_GetSecondaryId(u16 itemId)
 {
     return gItems[SanitizeItemId(itemId)].secondaryId;
 }
+<<<<<<< HEAD
 
 void ItemId_GetHoldEffectParam_Script()
 {
     VarSet(VAR_RESULT, ItemId_GetHoldEffectParam(VarGet(VAR_0x8004)));
 }
+=======
+>>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
