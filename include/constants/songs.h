@@ -541,6 +541,8 @@
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
 
+#define MUS_TEST_TOWN_MUSIC       610 // CUSTOM: MUS_TEST_TOWN_MUSIC
+
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                    0xFFFF

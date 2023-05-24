@@ -86,7 +86,7 @@ LittlerootTown_EventScript_SetTwinPos::
 	return
 
 LittlerootTown_EventScript_SetTwinGuardingRoutePos::
-	setobjectxyperm LOCALID_TWIN, 7, 2
+	setobjectxyperm LOCALID_TWIN, 7, 4
 	setobjectmovementtype LOCALID_TWIN, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -99,11 +99,11 @@ LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos::
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorMale::
-	setobjectxyperm LOCALID_MOM, 5, 9
+	setobjectxyperm LOCALID_MOM, 6, 23
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
-	setobjectxyperm LOCALID_MOM, 14, 9
+	setobjectxyperm LOCALID_MOM, 19, 23
 	return
 
 LittlerootTown_OnFrame:
@@ -114,8 +114,8 @@ LittlerootTown_OnFrame:
 
 LittlerootTown_EventScript_StepOffTruckMale::
 	lockall
-	setvar VAR_0x8004, 5
-	setvar VAR_0x8005, 8
+	setvar VAR_0x8004, 6
+	setvar VAR_0x8005, 22
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
@@ -125,8 +125,8 @@ LittlerootTown_EventScript_StepOffTruckMale::
 
 LittlerootTown_EventScript_StepOffTruckFemale::
 	lockall
-	setvar VAR_0x8004, 14
-	setvar VAR_0x8005, 8
+	setvar VAR_0x8004, 19
+	setvar VAR_0x8005, 22
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 8
@@ -173,12 +173,10 @@ LittlerootTown_Movement_MomExitHouse:
 	step_end
 
 LittlerootTown_Movement_MomApproachPlayerAtTruck:
-	walk_down
 	walk_in_place_faster_left
 	step_end
 
 LittlerootTown_Movement_MomApproachDoor:
-	delay_16
 	delay_8
 	walk_up
 	step_end
@@ -192,6 +190,7 @@ LittlerootTown_Movement_PlayerApproachDoor:
 	delay_16
 	delay_8
 	walk_right
+	walk_right
 	walk_in_place_faster_up
 	step_end
 
@@ -202,7 +201,6 @@ LittlerootTown_Movement_PlayerEnterHouse:
 
 LittlerootTown_Movement_PlayerStepOffTruck:
 	jump_right
-	delay_16
 	delay_16
 	delay_16
 	step_end
@@ -318,11 +316,13 @@ LittlerootTown_Movement_TwinApproachPlayerLeft:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_left
-	face_down
+	face_up
 	step_end
 
 LittlerootTown_Movement_TwinPushPlayerFromRoute:
+	lock_facing_direction
 	walk_down
+	unlock_facing_direction
 	step_end
 
 LittlerootTown_Movement_TwinReturnLeft:
@@ -365,7 +365,7 @@ LittlerootTown_Movement_TwinApproachPlayerRight:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_right
-	face_down
+	face_up
 	step_end
 
 LittlerootTown_Movement_TwinReturnRight:
@@ -1027,4 +1027,4 @@ LittlerootTown_EventScript_TestSignWoohoo::
 
 
 LittlerootTown_EventScript_TestSignWoohoo_Text_0:
-	.string "I am a sign!$"
+	.string "bro (skull emoji)$"
