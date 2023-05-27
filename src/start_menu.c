@@ -1015,11 +1015,7 @@ static u8 SaveFileExistsCallback(void)
     }
     else
     {
-<<<<<<< HEAD
         sSaveDialogCallback = SaveSavingMessageCallback;
-=======
-        ShowSaveMessage(gText_AlreadySavedFile, SaveConfirmOverwriteCallback);
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
     }
 
     return SAVE_IN_PROGRESS;

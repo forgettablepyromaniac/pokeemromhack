@@ -86,11 +86,7 @@ LittlerootTown_EventScript_SetTwinPos::
 	return
 
 LittlerootTown_EventScript_SetTwinGuardingRoutePos::
-<<<<<<< HEAD
 	setobjectxyperm LOCALID_TWIN, 7, 4
-=======
-	setobjectxyperm LOCALID_TWIN, 7, 2
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	setobjectmovementtype LOCALID_TWIN, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -103,19 +99,11 @@ LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos::
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorMale::
-<<<<<<< HEAD
 	setobjectxyperm LOCALID_MOM, 6, 23
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
 	setobjectxyperm LOCALID_MOM, 19, 23
-=======
-	setobjectxyperm LOCALID_MOM, 5, 9
-	return
-
-LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
-	setobjectxyperm LOCALID_MOM, 14, 9
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	return
 
 LittlerootTown_OnFrame:
@@ -126,13 +114,8 @@ LittlerootTown_OnFrame:
 
 LittlerootTown_EventScript_StepOffTruckMale::
 	lockall
-<<<<<<< HEAD
 	setvar VAR_0x8004, 6
 	setvar VAR_0x8005, 22
-=======
-	setvar VAR_0x8004, 5
-	setvar VAR_0x8005, 8
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
@@ -142,13 +125,8 @@ LittlerootTown_EventScript_StepOffTruckMale::
 
 LittlerootTown_EventScript_StepOffTruckFemale::
 	lockall
-<<<<<<< HEAD
 	setvar VAR_0x8004, 19
 	setvar VAR_0x8005, 22
-=======
-	setvar VAR_0x8004, 14
-	setvar VAR_0x8005, 8
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 8
@@ -195,18 +173,10 @@ LittlerootTown_Movement_MomExitHouse:
 	step_end
 
 LittlerootTown_Movement_MomApproachPlayerAtTruck:
-<<<<<<< HEAD
-=======
-	walk_down
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	walk_in_place_faster_left
 	step_end
 
 LittlerootTown_Movement_MomApproachDoor:
-<<<<<<< HEAD
-=======
-	delay_16
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	delay_8
 	walk_up
 	step_end
@@ -220,10 +190,7 @@ LittlerootTown_Movement_PlayerApproachDoor:
 	delay_16
 	delay_8
 	walk_right
-<<<<<<< HEAD
 	walk_right
-=======
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	walk_in_place_faster_up
 	step_end
 
@@ -236,10 +203,6 @@ LittlerootTown_Movement_PlayerStepOffTruck:
 	jump_right
 	delay_16
 	delay_16
-<<<<<<< HEAD
-=======
-	delay_16
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	step_end
 
 LittlerootTown_EventScript_BeginDexUpgradeScene::
@@ -353,7 +316,6 @@ LittlerootTown_Movement_TwinApproachPlayerLeft:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_left
-<<<<<<< HEAD
 	face_up
 	step_end
 
@@ -361,13 +323,6 @@ LittlerootTown_Movement_TwinPushPlayerFromRoute:
 	lock_facing_direction
 	walk_down
 	unlock_facing_direction
-=======
-	face_down
-	step_end
-
-LittlerootTown_Movement_TwinPushPlayerFromRoute:
-	walk_down
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	step_end
 
 LittlerootTown_Movement_TwinReturnLeft:
@@ -410,11 +365,7 @@ LittlerootTown_Movement_TwinApproachPlayerRight:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_right
-<<<<<<< HEAD
 	face_up
-=======
-	face_down
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
 	step_end
 
 LittlerootTown_Movement_TwinReturnRight:
@@ -1076,8 +1027,4 @@ LittlerootTown_EventScript_TestSignWoohoo::
 
 
 LittlerootTown_EventScript_TestSignWoohoo_Text_0:
-<<<<<<< HEAD
 	.string "bro (skull emoji)$"
-=======
-	.string "I am a sign!$"
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c

@@ -7,7 +7,6 @@
         {
           "type": "land_mons",
           "encounter_rates": [
-<<<<<<< HEAD
             20,
             20,
             10,
@@ -20,43 +19,31 @@
             4,
             1,
             1
-=======
-            20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
           ]
         },
         {
           "type": "water_mons",
           "encounter_rates": [
-<<<<<<< HEAD
             60,
             30,
             5,
             4,
             1
-=======
-            60, 30, 5, 4, 1
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
           ]
         },
         {
           "type": "rock_smash_mons",
           "encounter_rates": [
-<<<<<<< HEAD
             60,
             30,
             5,
             4,
             1
-=======
-            60, 30, 5, 4, 1
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
           ]
         },
         {
           "type": "fishing_mons",
           "encounter_rates": [
-<<<<<<< HEAD
             70,
             30,
             60,
@@ -85,14 +72,6 @@
               8,
               9
             ]
-=======
-            70, 30, 60, 20, 20, 40, 40, 15, 4, 1
-          ],
-          "groups": {
-            "old_rod": [0, 1],
-            "good_rod": [2, 3, 4],
-            "super_rod": [5, 6, 7, 8, 9]
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
           }
         }
       ],
@@ -11512,7 +11491,6 @@
               }
             ]
           }
-<<<<<<< HEAD
         },
         {
           "map": "MAP_LITTLEROOT_TOWN",
@@ -11602,8 +11580,6 @@
               }
             ]
           }
-=======
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
         }
       ]
     },

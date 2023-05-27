@@ -39,8 +39,4 @@ prefabs.json
 *.diff
 *.sym
 *.js
-<<<<<<< HEAD
 tools/poryscript
-=======
-tools/poryscript
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c

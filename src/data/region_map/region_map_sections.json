@@ -2,11 +2,7 @@
   "map_sections": [
     {
       "map_section": "MAPSEC_LITTLEROOT_TOWN",
-<<<<<<< HEAD
       "name": "MY FIRST TOWN",
-=======
-      "name": "LITTLEROOT TOWN",
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
       "x": 4,
       "y": 11,
       "width": 1,
@@ -535,10 +531,6 @@
     {
       "map_section": "MAPSEC_AQUA_HIDEOUT_OLD",
       "name": "{AQUA} HIDEOUT",
-<<<<<<< HEAD
-=======
-      "name_clone": true,
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
       "x": 19,
       "y": 3,
       "width": 1,
@@ -803,10 +795,6 @@
     {
       "map_section": "MAPSEC_ROUTE_4_POKECENTER",
       "name": "ROUTE 4",
-<<<<<<< HEAD
-=======
-      "name_clone": true,
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
       "x": 0,
       "y": 0,
       "width": 1,
@@ -815,10 +803,6 @@
     {
       "map_section": "MAPSEC_ROUTE_10_POKECENTER",
       "name": "ROUTE 10",
-<<<<<<< HEAD
-=======
-      "name_clone": true,
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1059,10 +1043,6 @@
     {
       "map_section": "MAPSEC_UNDERGROUND_PATH_2",
       "name": "UNDERGROUND PATH",
-<<<<<<< HEAD
-=======
-      "name_clone": true,
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1079,10 +1059,6 @@
     {
       "map_section": "MAPSEC_KANTO_VICTORY_ROAD",
       "name": "VICTORY ROAD",
-<<<<<<< HEAD
-=======
-      "name_clone": true,
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1115,10 +1091,6 @@
     {
       "map_section": "MAPSEC_KANTO_SAFARI_ZONE",
       "name": "SAFARI ZONE",
-<<<<<<< HEAD
-=======
-      "name_clone": true,
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1463,10 +1435,6 @@
     {
       "map_section": "MAPSEC_TRAINER_TOWER_2",
       "name": "TRAINER TOWER",
-<<<<<<< HEAD
-=======
-      "name_clone": true,
->>>>>>> ca110bd1878570ec6cade8ec04e18e0e431ed64c
       "x": 0,
       "y": 0,
       "width": 1,
