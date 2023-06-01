@@ -4,7 +4,7 @@
 
 LittlerootTown_ObjectEvents:
 	object_event 1, OBJ_EVENT_GFX_TWIN, 7, 4, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 2, TRAINER_TYPE_NONE, 0, LittlerootTown_EventScript_Twin, 0
-	object_event 2, OBJ_EVENT_GFX_FAT_MAN, 12, 37, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, TRAINER_TYPE_NONE, 0, LittlerootTown_EventScript_FatMan, FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN
+	object_event 2, OBJ_EVENT_GFX_FAT_MAN, 10, 35, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, TRAINER_TYPE_NONE, 0, LittlerootTown_EventScript_FatMan, FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN
 	object_event 3, OBJ_EVENT_GFX_BOY_2, 7, 13, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, TRAINER_TYPE_NONE, 0, LittlerootTown_EventScript_Boy, 0
 	object_event 4, OBJ_EVENT_GFX_MOM, 6, 23, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, TRAINER_TYPE_NONE, 0, LittlerootTown_EventScript_Mom, FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE
 	object_event 5, OBJ_EVENT_GFX_TRUCK, 2, 25, 4, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, TRAINER_TYPE_NONE, 0, 0x0, FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
@@ -33,7 +33,7 @@ LittlerootTown_MapBGEvents:
 	bg_sign_event 21, 13, 0, BG_EVENT_PLAYER_FACING_ANY, LittlerootTown_EventScript_BirchsLabSign
 	bg_sign_event 2, 22, 3, BG_EVENT_PLAYER_FACING_ANY, LittlerootTown_EventScript_BrendansHouseSign
 	bg_sign_event 21, 22, 3, BG_EVENT_PLAYER_FACING_ANY, LittlerootTown_EventScript_MaysHouseSign
-	bg_sign_event 2, 12, 0, BG_EVENT_PLAYER_FACING_NORTH, LittlerootTown_EventScript_TestSignWoohoo
+	bg_sign_event 13, 7, 0, BG_EVENT_PLAYER_FACING_NORTH, LittlerootTown_EventScript_TestSignWoohoo
 
 LittlerootTown_MapEvents::
 	map_events LittlerootTown_ObjectEvents, LittlerootTown_MapWarps, LittlerootTown_MapCoordEvents, LittlerootTown_MapBGEvents
